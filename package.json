@@ -1,0 +1,74 @@
+{
+  "name": "@azat-io/prettier-config",
+  "version": "0.0.1",
+  "description": "Prettier shareable config",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "config",
+    "code-styles"
+  ],
+  "homepage": "https://github.com/azat-io/prettier-config",
+  "repository": "azat-io/prettier-config",
+  "license": "MIT",
+  "author": "Azat S. <to@azat.io>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "ci:changelog": "changelogithub",
+    "ci:clear": "clear-package-json package.json --output package.json",
+    "release": "pnpm release:check && pnpm release:version && pnpm release:prepare && pnpm release:git",
+    "release:check": "pnpm test",
+    "release:git": "pnpm release:git:add && pnpm release:git:commit && pnpm release:git:tag && pnpm release:git:push",
+    "release:git:add": "git add .",
+    "release:git:commit": "cross-env-shell \"git commit -m \\\"build: publish v$npm_package_version\\\"\"",
+    "release:git:push": "cross-env-shell \"git push --atomic origin HEAD v$npm_package_version\"",
+    "release:git:tag": "cross-env-shell \"git tag v$npm_package_version\"",
+    "release:prepare": "pnpm run /^release:prepare:/",
+    "release:prepare:changelog": "prettier --write changelog.md",
+    "release:prepare:package-json": "prettier --write package.json",
+    "release:version": "changelogen --output changelog.md --release --no-commit --no-tag",
+    "test": "pnpm run /^test:/",
+    "test:format": "prettier --check \"**/*.{js,ts,json,md,yml}\"",
+    "test:js": "eslint .",
+    "test:packages": "pnpm dedupe --check",
+    "test:types": "tsc --noEmit --pretty"
+  },
+  "dependencies": {
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-jsdoc": "^1.8.0",
+    "prettier-plugin-svelte": "^3.4.1"
+  },
+  "devDependencies": {
+    "@azat-io/eslint-config": "^2.66.0",
+    "@azat-io/typescript-config": "^1.1.1",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/types": "^20.3.1",
+    "@types/node": "^25.0.10",
+    "changelogen": "^0.6.2",
+    "changelogithub": "^14.0.0",
+    "clean-publish": "^6.0.1",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.2",
+    "jiti": "^2.6.1",
+    "prettier": "^3.8.1",
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "prettier": "^3.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

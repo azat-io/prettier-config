@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+.nvmrc
+
+# Build
+dist/
+
+# Editor
+.vscode/
+.vim/
+.idea/
+
+# Misc
+.DS_Store
