@@ -38,9 +38,41 @@ let config: Config = {
    */
   htmlWhitespaceSensitivity: 'css',
   /**
+   * Do not add spaces inside JSDoc type brackets.
+   */
+  jsdocBracketSpacing: false,
+  /**
    * Use multi-line comments instead of single-line for JSDoc comments.
    */
   jsdocCommentLineStrategy: 'multiline',
+  /**
+   * Remove empty JSDoc comment blocks.
+   */
+  jsdocEmptyCommentStrategy: 'remove',
+  /**
+   * Wrap lines as soon as they reach the print width.
+   */
+  jsdocLineWrappingStyle: 'greedy',
+  /**
+   * Do not always fence code blocks with triple backticks.
+   */
+  jsdocPreferCodeFences: false,
+  /**
+   * Do not add a blank line between the last `@param` and `@returns`.
+   */
+  jsdocSeparateReturnsFromParam: false,
+  /**
+   * Do not add blank lines between tag groups.
+   */
+  jsdocSeparateTagGroups: false,
+  /**
+   * Use one space in JSDoc formatting.
+   */
+  jsdocSpaces: 1,
+  /**
+   * Align JSDoc tags vertically.
+   */
+  jsdocVerticalAlignment: true,
   /**
    * Use double quotes in JSX.
    */
@@ -107,6 +139,10 @@ let config: Config = {
    * Print trailing commas wherever possible in multi-line structures.
    */
   trailingComma: 'all',
+  /**
+   * Enable TSDoc support.
+   */
+  tsdoc: true,
   /**
    * Indent lines with spaces instead of tabs.
    */
