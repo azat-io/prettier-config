@@ -40,11 +40,12 @@
   },
   "dependencies": {
     "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-curly": "^0.4.1",
     "prettier-plugin-jsdoc": "^1.8.0",
     "prettier-plugin-svelte": "^3.4.1"
   },
   "devDependencies": {
-    "@azat-io/eslint-config": "^2.66.0",
+    "@azat-io/eslint-config": "^2.67.0",
     "@azat-io/typescript-config": "^1.1.1",
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",

@@ -52,6 +52,7 @@ export default prettierConfig satisfies Config
 This config uses the following plugins:
 
 - [prettier-plugin-astro](https://github.com/withastro/prettier-plugin-astro)
+- [prettier-plugin-curly](https://github.com/JoshuaKGoldberg/prettier-plugin-curly)
 - [prettier-plugin-jsdoc](https://github.com/hosseinmd/prettier-plugin-jsdoc)
 - [prettier-plugin-svelte](https://github.com/sveltejs/prettier-plugin-svelte)
 

@@ -71,6 +71,7 @@ let config: Config = {
    */
   plugins: [
     import.meta.resolve('prettier-plugin-astro'),
+    import.meta.resolve('prettier-plugin-curly'),
     import.meta.resolve('prettier-plugin-svelte'),
     import.meta.resolve('prettier-plugin-jsdoc'),
   ],
