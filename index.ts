@@ -72,7 +72,7 @@ let config: Config = {
   /**
    * Align JSDoc tags vertically.
    */
-  jsdocVerticalAlignment: true,
+  jsdocVerticalAlignment: false,
   /**
    * Use double quotes in JSX.
    */
