@@ -4,7 +4,6 @@
   src="https://raw.githubusercontent.com/azat-io/prettier-config/main/assets/logo.svg"
   alt="Prettier Config Logo"
   align="right"
-  width="160"
   height="160"
 />
 
