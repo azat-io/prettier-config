@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.3.0
+
+[compare changes](https://github.com/azat-io/prettier-config/compare/v1.2.0...v1.3.0)
+
+### 🚀 Features
+
+- Update prettier plugins
+  ([99152e8](https://github.com/azat-io/prettier-config/commit/99152e8))
+
+### ❤️ Contributors
+
+- Azat S. ([@azat-io](https://github.com/azat-io))
+
 ## v1.2.0
 
 [compare changes](https://github.com/azat-io/prettier-config/compare/v1.1.1...v1.2.0)
