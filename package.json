@@ -41,27 +41,27 @@
   "dependencies": {
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-curly": "^0.4.1",
-    "prettier-plugin-jsdoc": "^1.8.0",
-    "prettier-plugin-svelte": "^3.5.1"
+    "prettier-plugin-jsdoc": "^1.8.1",
+    "prettier-plugin-svelte": "^4.1.0"
   },
   "devDependencies": {
-    "@azat-io/eslint-config": "^2.78.0",
+    "@azat-io/eslint-config": "^2.82.0",
     "@azat-io/typescript-config": "^1.1.1",
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
-    "@commitlint/types": "^20.5.0",
-    "@types/node": "^25.6.0",
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@commitlint/types": "^21.0.1",
+    "@types/node": "^25.9.1",
     "changelogen": "^0.6.2",
     "changelogithub": "^14.0.0",
-    "clean-publish": "^6.0.5",
+    "clean-publish": "^7.1.0",
     "cross-env": "^10.1.0",
-    "eslint": "^10.2.1",
-    "jiti": "^2.6.1",
+    "eslint": "^10.4.1",
+    "jiti": "^2.7.0",
     "prettier": "^3.8.3",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
-    "vite": "^8.0.10",
-    "vite-plugin-dts": "^4.5.4"
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2"
   },
   "peerDependencies": {
     "prettier": "^3.8.1"
