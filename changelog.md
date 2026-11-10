@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.4.0
+
+[compare changes](https://github.com/azat-io/prettier-config/compare/v1.3.0...v1.4.0)
+
+### 🚀 Features
+
+- Update prettier plugins
+  ([7a48555](https://github.com/azat-io/prettier-config/commit/7a48555))
+- Add astro plugin options
+  ([a3d9ad5](https://github.com/azat-io/prettier-config/commit/a3d9ad5))
+
+### ❤️ Contributors
+
+- Azat S. ([@azat-io](https://github.com/azat-io))
+
 ## v1.3.0
 
 [compare changes](https://github.com/azat-io/prettier-config/compare/v1.2.0...v1.3.0)
