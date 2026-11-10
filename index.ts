@@ -17,6 +17,18 @@ let config: Config = {
    */
   arrowParens: 'avoid',
   /**
+   * Use shorthand syntax for matching identifier attributes in Astro.
+   */
+  astroAllowShorthand: true,
+  /**
+   * Match the default Astro `compressHTML` whitespace handling.
+   */
+  astroCompressHTML: 'jsx',
+  /**
+   * Format the frontmatter of Astro files.
+   */
+  astroSkipFrontmatter: false,
+  /**
    * Put the `>` of a multi-line HTML element on a new line.
    */
   bracketSameLine: false,
